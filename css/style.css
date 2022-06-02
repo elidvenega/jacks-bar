@@ -124,61 +124,49 @@ h4 {
 }
 
 /* food pics */
-/* grid part with images in squares*/
 .food-images {
   /* display: grid;
   grid-template-columns: repeat(6, 1fr); */
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
   overflow: hidden;
+  padding-bottom: 15px;
 }
 
 .f-1 {
   background: url("../images/b-1.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
-  z-index: 1;
+  height: 40vh;
+  width: 17vw;
 }
+
 .f-2 {
   background: url("../images/b-2.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
-  z-index: 1;
+  height: 40vh;
+  width: 17vw;
 }
 .f-3 {
   background: url("../images/b-3.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  height: 40vh;
+  width: 17vw;
 }
 .f-4 {
   background: url("../images/b-4.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  height: 40vh;
+  width: 17vw;
 }
 .f-5 {
   background: url("../images/b-5.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  height: 40vh;
+  width: 17vw;
 }
 
 .f-6 {
   background: url("../images/b-6.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  height: 40vh;
+  width: 17vw;
 }
-
 
 /*utility classes  */
 .container {
