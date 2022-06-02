@@ -12,7 +12,8 @@ body {
 }
 
 #img {
-  background: #000 url("../images/jacks-bar.jpg") no-repeat center center/cover;
+  background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
+    center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +23,7 @@ body {
 }
 
 #layer {
-  background: #000;
+  background: #0c0404;
   height: 100%;
   opacity: 0.6;
   position: absolute;
@@ -97,6 +98,11 @@ h4 {
   height: 100vh;
   z-index: 1;
 }
+
+/* Hover */
+.square:hover {
+  transform: scale(1.2);
+}
 .square-2 {
   padding: 1.4rem;
   height: 60vh;
@@ -105,15 +111,76 @@ h4 {
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
 }
 
-/* Hover */
-.square:hover {
-  transform: scale(1.2);
+.content .btn {
+  background: #fff;
+  color: #0c0404;
+  margin-left: 160px;
+  padding: 10px;
+  width: 6vw;
 }
 
-/*utility class  */
+/* food pics */
+/* grid part with images in squares*/
+.food-images {
+  /* display: grid;
+  grid-template-columns: repeat(6, 1fr); */
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.f-1 {
+  background: url("../images/b-1.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+  z-index: 1;
+}
+.f-2 {
+  background: url("../images/b-2.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+  z-index: 1;
+}
+.f-3 {
+  background: url("../images/b-3.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+.f-4 {
+  background: url("../images/b-4.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+.f-5 {
+  background: url("../images/b-5.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+
+.f-6 {
+  background: url("../images/b-6.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+
+
+/*utility classes  */
 .container {
   padding: 20px 195px;
 }
@@ -121,6 +188,7 @@ h4 {
 .text-center {
   text-align: center;
 }
+
 /* margin top  */
 .m-1 {
   margin-top: 10px;
@@ -154,10 +222,10 @@ h4 {
 }
 /* margin left */
 .m-left {
-margin-left: 60px;
+  margin-left: 60px;
 }
-/* About CSS */
 
+/* footer */
 .footer {
   background: #333;
   height: 20vh;
