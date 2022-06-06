@@ -117,9 +117,9 @@ h4 {
 .btn {
   background: #fff;
   color: #0c0404;
-  margin-left: 160px;
   padding: 10px;
   width: 6vw;
+  margin-left: 160px;
 }
 
 /* food pics */
@@ -172,7 +172,7 @@ h4 {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -256,7 +256,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
   max-width: 100%;
   position: relative;
 }
@@ -264,7 +264,7 @@ h4 {
 #layer-two {
   background: #0c0404;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.6;
   position: absolute;
   width: 100%;
 }
@@ -302,6 +302,20 @@ h4 {
   text-align: center;
   width: 13vw;
   z-index: 1;
+}
+
+.btn-four {
+  background: #fff;
+  color: #0c0404;
+  height: 7vh;
+  width: 8vw;
+}
+
+.btn-five {
+  background: #fff;
+  color: #0c0404;
+  height: 7vh;
+  width: 10vw;
 }
 
 .footer {
@@ -392,6 +406,49 @@ h4 {
   text-transform: uppercase;
   padding: 2px;
 }
+
+/* food pictures using grid */
+/* grid part with images in squares*/
+.grid-food {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+.grid-food h1 {
+  font-size: 3.7rem;
+  margin: 4rem;
+}
+.gf-1 {
+  background: url("../images/b-1.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+  z-index: 1;
+}
+.gf-2 {
+  background: url("../images/b-2.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+  z-index: 1;
+}
+.gf-3 {
+  background: url("../images/b-3.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+.gf-4 {
+  background: url("../images/b-4.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 60vh;
+}
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
