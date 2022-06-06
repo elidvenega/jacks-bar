@@ -287,10 +287,10 @@ h4 {
   background: transparent;
   border: #fff 2px solid;
   color: #fff;
-  display: inline-block;
   height: 7vh;
   text-align: center;
   width: 12vw;
+  padding: 200px;
   z-index: 1;
 }
 
@@ -298,7 +298,6 @@ h4 {
   background: transparent;
   border: #fff 2px solid;
   color: #fff;
-  display: inline-block;
   height: 7vh;
   text-align: center;
   width: 13vw;
@@ -353,6 +352,39 @@ h4 {
 /* margin left */
 .m-left {
   margin-left: 60px;
+}
+
+/* padding */
+
+.p-1 {
+  padding: 5px;
+}
+
+.p-2 {
+  padding: 10px;
+}
+.p-3 {
+  padding: 15px;
+}
+.p-4 {
+  padding: 20px;
+}
+.p-5 {
+  padding: 25px;
+}
+.p-6 {
+  padding: 30px;
+}
+.p-7 {
+  padding: 35px;
+}
+
+.p-8 {
+  padding: 40px;
+}
+
+.p-9 {
+  padding: 45px;
 }
 
 /* text */
