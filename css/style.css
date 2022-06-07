@@ -457,7 +457,7 @@ h4 {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media (max-width: 600px) {
+@media all and (max-width: 600px) {
   #img {
     background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
       center/cover;
@@ -515,7 +515,7 @@ h4 {
   .nav a {
     color: #fff;
     list-style: none;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -531,104 +531,81 @@ h4 {
   }
 
   /* grid part with images in squares*/
-.squares {
-  display: flex;
-  flex-direction: column;
-  /* grid-template-columns: 1.5fr 1fr;  */
-  overflow: hidden;
-  height: 100vh;
-}
+  .squares {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1.5fr 1fr;  */
+    overflow: hidden;
+    height: 100vh;
+  }
 
-/* .squares .square-2 {
-  padding: 30px;
-  margin-top: 0px;
-} */
+  .btn {
+    background: #fff;
+    color: #0c0404;
+    padding: 10px;
+    margin-left: 160px;
+  }
 
-/* .btn {
-  background: #fff;
-  color: #0c0404;
-  padding: 20px;
-  width: 6vw;
-  /* margin-left: 160px; */
-} */
+  .squares h1 {
+    font-size: 2.7rem;
+    margin: 4rem;
+    margin-top: 100px;
+  }
+  .square {
+    background: url("../images/bar.jpg") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 1.4rem;
+    height: 100vh;
+    z-index: 1;
+  }
+  /* food pics */
+  .food-images {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 
+  .f-1 {
+    height: 40vh;
+    width: 100%;
+  }
 
-.btn {
-  background: #fff;
-  color: #0c0404;
-  padding: 10px;
-  margin-left: 160px;
-}
+  .f-2 {
+    height: 40vh;
+    width: 100%;
+  }
+  .f-3 {
+    height: 40vh;
+    width: 100%;
+  }
+  .f-4 {
+    height: 40vh;
+    width: 100%;
+  }
+  .f-5 {
+    height: 40vh;
+    width: 100%;
+  }
 
-.squares h1 {
-  font-size: 2.7rem;
-  margin: 4rem;
-  margin-top: 100px;
-}
-.square {
-  background: url("../images/bar.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 100vh;
-  z-index: 1;
-}
-/* food pics */
-.food-images {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
+  .f-6 {
+    height: 40vh;
+    width: 100%;
+  }
 
-.f-1 {
-  height: 40vh;
-  width: 100%;
-}
+  .myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
 
-.f-2 {
-  height: 40vh;
-  width: 100%;
-}
-.f-3 {
-  height: 40vh;
-  width: 100%;
-}
-.f-4 {
-  height: 40vh;
-  width: 100%;
-}
-.f-5 {
-  height: 40vh;
-  width: 100%;
-}
+  .myImg:hover {
+    opacity: 0.7;
+  }
 
-.f-6 {
-  height: 40vh;
-  width: 100%;
-}
-
-.myImg {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.myImg:hover {
-  opacity: 0.7;
-}
-
-.grid-food {
-  display: none;
-}
+  .grid-food {
+    display: none;
+  }
   .modal-content {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
