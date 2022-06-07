@@ -458,7 +458,101 @@ h4 {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+@media (max-width: 600px) {
+  #img {
+    background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+  }
+
+  #layer {
+    background: #0c0404;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+  }
+
+  #img h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 125px;
+    z-index: 1;
+  }
+
+  #img p {
+    color: #fff;
+    font-size: 1rem;
+    z-index: 1;
+  }
+
+  #bar {
+    font-size: 3rem;
+    margin: 10px;
+  }
+
+  /* Navigation */
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 5px;
+    gap: 5px;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+  }
+
+  .nav li {
+    list-style: none;
+    margin-top: 50px;
+    z-index: 1;
+  }
+
+  .nav a {
+    color: #fff;
+    list-style: none;
+    font-size: .6rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  /*utility classes  */
+  .container {
+    padding: 10px 70px;
+  }
+
+  /* grid part with images in squares*/
+.squares {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 1.5fr 1fr; */
+  overflow: hidden;
+  padding: 50px;
+  height: 100vh;
+}
+.squares h1 {
+  font-size: 2.7rem;
+  margin: 4rem;
+  margin-top: 230px;
+}
+.square {
+  background: url("../images/bar.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 1.4rem;
+  height: 100vh;
+  z-index: 1;
+}
+
+.grid-food {
+  display: none;
+}
   .modal-content {
     width: 100%;
   }
