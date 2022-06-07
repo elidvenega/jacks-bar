@@ -332,6 +332,14 @@ h4 {
   text-align: center;
 }
 
+.text-white {
+  color: #fff;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 /* margin top  */
 .m-1 {
   margin-top: 10px;
@@ -414,41 +422,40 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
 }
-.grid-food h1 {
-  font-size: 3.7rem;
-  margin: 4rem;
-}
+
 .gf-1 {
-  background: url("../images/b-1.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
-  z-index: 1;
+  background: url("../images/food-1.jpg") no-repeat center center/cover;
+  height: 50vh;
 }
 .gf-2 {
-  background: url("../images/b-2.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
-  z-index: 1;
+  background: url("../images/food-2.jpg") no-repeat center center/cover;
+  height: 50vh;
 }
 .gf-3 {
-  background: url("../images/b-3.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  background: url("../images/food-3.jpg") no-repeat center center/cover;
+  height: 50vh;
 }
 .gf-4 {
-  background: url("../images/b-4.jpg") no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 1.4rem;
-  height: 60vh;
+  background: url("../images/food-4.jpg") no-repeat center center/cover;
+  height: 50vh;
 }
 
+.gf-5 {
+  background: url("../images/food-5.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
+.gf-6 {
+  background: url("../images/food-6.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
+.gf-7 {
+  background: url("../images/food-7.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
+.gf-8 {
+  background: url("../images/food-8.jpg") no-repeat center center/cover;
+  height: 50vh;
+}
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
