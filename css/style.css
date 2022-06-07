@@ -527,15 +527,32 @@ h4 {
     padding: 10px 70px;
   }
 
+  .m-left {
+    margin-left: 20px;
+  }
+
   /* grid part with images in squares*/
 .squares {
   display: flex;
   flex-direction: column;
-  /* grid-template-columns: 1.5fr 1fr; */
+  /* grid-template-columns: 1.5fr 1fr;  */
   overflow: hidden;
-  padding: 50px;
   height: 100vh;
 }
+
+/* .squares .square-2 {
+  padding: 30px;
+  margin-top: 0px;
+} */
+
+.btn {
+  background: #fff;
+  color: #0c0404;
+  padding: 20px;
+  width: 6vw;
+  /* margin-left: 160px; */
+}
+
 .squares h1 {
   font-size: 2.7rem;
   margin: 4rem;
