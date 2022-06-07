@@ -289,7 +289,6 @@ h4 {
   height: 7vh;
   text-align: center;
   width: 12vw;
-  padding: 200px;
   z-index: 1;
 }
 
@@ -457,7 +456,7 @@ h4 {
 }
 
 /* 100% Image Width on Smaller Screens */
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   #img {
     background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
       center/cover;
@@ -479,14 +478,14 @@ h4 {
 
   #img h1 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 125px;
     z-index: 1;
   }
 
   #img p {
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     z-index: 1;
   }
 
@@ -515,7 +514,7 @@ h4 {
   .nav a {
     color: #fff;
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -602,9 +601,73 @@ h4 {
     opacity: 0.7;
   }
 
+  /* bar picture */
+
+  #bar-picture {
+    background: #0c0404 url("../images/inside-bar.jpg") no-repeat center
+      center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    position: relative;
+  }
+
+  #layer-two {
+    background: #0c0404;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+  }
+
+  #bar-picture h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin-top: 125px;
+    z-index: 1;
+  }
+  /* buttons */
+  .btn-two {
+    background: transparent;
+    border: #fff 2px solid;
+    color: #fff;
+    height: 5vh;
+    text-align: center;
+    width: 18vw;
+    z-index: 1;
+  }
+
+  .btn-three {
+    background: transparent;
+    border: #fff 2px solid;
+    color: #fff;
+    height: 7vh;
+    text-align: center;
+    width: 20vw;
+    z-index: 1;
+  }
+
+  .btn-four {
+    background: #fff;
+    color: #0c0404;
+    height: 7vh;
+    width: 14vw;
+  }
+
+  .btn-five {
+    background: #fff;
+    color: #0c0404;
+    height: 7vh;
+    width: 14vw;
+  }
+
   .grid-food {
     display: none;
   }
+
   .modal-content {
     width: 100%;
   }
