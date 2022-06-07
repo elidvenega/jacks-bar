@@ -493,6 +493,11 @@ h4 {
     font-size: 2rem;
     margin: 10px;
   }
+  .nav {
+    background: #0c0404;
+    width: 100%;
+  }
+
   .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -500,18 +505,17 @@ h4 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 5px;
-    gap: 5px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     list-style: none;
-    padding: 5px;
+    text-align: center;
   }
   .nav li {
     list-style: none;
-    margin-top: 50px;
+    margin-top: 5px;
     z-index: 1;
   }
   .nav a {
@@ -521,40 +525,6 @@ h4 {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-  }
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: var(--primary-color);
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-    z-index: 2;
-  }
-  .menu li:hover {
-    display: inline-block;
-    background-color: var(--btn-dark-two);
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-  }
-  .menu li + li {
-    margin-top: 12px;
-  }
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    -webkit-transform: translateX(35%);
-    transform: translateX(35%);
-  }
-  .dropdown li:hover {
-    background-color: #4c9e9e;
   }
   .container {
     padding: 10px 70px;
