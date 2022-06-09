@@ -8,25 +8,28 @@
     <title>Jacks Bar</title>
   </head>
   <body>
+    <!-- navigation -->
+    <section class="top-nav">
+      <div class="text-uppercase">Jacks Bar</div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li class="text-uppercase"><a href="#about">About</a></li>
+        <li class="text-uppercase"><a href="#booking">Large Bookings</a></li>
+        <li class="text-uppercase"><a href="#menu">Menu</a></li>
+      </ul>
+    </section>
     <header>
-      <div id="img">
-        <div id="layer"></div>
-        <div class="nav">
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Large Bookings</a></li>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">What's On</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="img">
+        <div class="layer"></div>
         <h1>JACKS</h1>
         <p>ESTD <strong id="bar">BAR</strong> 1963</p>
       </div>
     </header>
     <!-- About Section -->
-    <div class="container text-center">
+    <div id="about" class="container text-center">
       <p>
         If you fancy stopping by, propping up the bar and having a drink in
         Waterloo, then Jacks is the place to be! If you’re looking for a spot
@@ -53,7 +56,7 @@
     </div>
 
     <!-- Menu -->
-    <div class="squares m-2" id="selection">
+    <div class="squares m-2" id="menu">
       <div class="square">
         <h1>JOHNNY RICE</h1>
       </div>
@@ -110,9 +113,9 @@
     </div>
 
     <!--Inside the bar picture -->
-    <div id="bar-picture">
-      <div id="layer-two"></div>
-      <h3 class="text-uppercase">Book an area</h3>
+    <div class="bar-picture">
+      <div class="layer"></div>
+      <h3 class="text-uppercase" id="booking">Book an area</h3>
       <button class="btn-two m-2 text-uppercase">Make a booking</button>
       <h3 class="text-uppercase">Here the whole bar?</h3>
       <button class="btn-three m-2 text-uppercase">Private hire enquiry</button>

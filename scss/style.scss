@@ -9,7 +9,85 @@ body {
   font-family: "Tiro Gurmukhi", serif;
   line-height: 1.4;
 }
-#img {
+
+/* Top nav */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #2d3436;
+  color: #fff;
+  height: 55px;
+  padding: 26px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* getting all */
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.img {
   background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
     center/cover;
   display: -webkit-box;
@@ -26,20 +104,21 @@ body {
   max-width: 100%;
   position: relative;
 }
-#layer {
+
+.layer {
   background: #0c0404;
   height: 100%;
   opacity: 0.6;
   position: absolute;
   width: 100%;
 }
-#img h1 {
+.img h1 {
   color: #fff;
   font-size: 7rem;
   margin-top: 125px;
   z-index: 1;
 }
-#img p {
+.img p {
   color: #fff;
   font-size: 2rem;
   z-index: 1;
@@ -48,71 +127,7 @@ body {
   font-size: 5rem;
   margin: 10px;
 }
-.nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  font-size: 20px;
-  gap: 25px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;
-  padding: 5px;
-}
-.nav li {
-  list-style: none;
-  margin-top: 50px;
-  z-index: 1;
-}
-.nav a {
-  color: #fff;
-  list-style: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.services {
-  position: relative;
-}
-.dropdown {
-  background-color: var(--primary-color);
-  padding: 1em 0;
-  position: absolute;
-  display: none;
-  border-radius: 8px;
-  top: 35px;
-}
-.dropdown li + li {
-  margin-top: 10px;
-}
-.dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
-}
-.dropdown li:hover {
-  background-color: var(--btn-dark-two);
-}
-.services:hover .dropdown {
-  display: block;
-}
-input[type="checkbox"] {
-  display: none;
-}
-.hamburger {
-  display: none;
-  font-size: 24px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+
 h4 {
   text-decoration: underline;
 }
@@ -274,7 +289,7 @@ h4 {
   text-decoration: none;
   cursor: pointer;
 }
-#bar-picture {
+.bar-picture {
   background: #0c0404 url("../images/inside-bar.jpg") no-repeat center
     center/cover;
   display: -webkit-box;
@@ -291,21 +306,15 @@ h4 {
   max-width: 100%;
   position: relative;
 }
-#layer-two {
-  background: #0c0404;
-  height: 100%;
-  opacity: 0.6;
-  position: absolute;
-  width: 100%;
-}
-#bar-picture h3 {
+
+.bar-picture h3 {
   color: #fff;
   font-size: 2.3rem;
   font-weight: bolder;
   margin-top: 125px;
   z-index: 1;
 }
-#bar-picture p {
+.bar-picture p {
   color: #fff;
   font-size: 2rem;
   z-index: 1;
@@ -454,6 +463,45 @@ h4 {
   height: 50vh;
 }
 @media (max-width: 600px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white;
+    background-color: #2d3436;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
   #img {
     background: #0c0404 url("../images/jacks-bar.jpg") no-repeat center
       center/cover;
@@ -489,43 +537,12 @@ h4 {
     font-size: 2rem;
     z-index: 1;
   }
+
   #bar {
     font-size: 2rem;
     margin: 10px;
   }
-  .nav {
-    background: #0c0404;
-    width: 100%;
-  }
 
-  .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: column;
-    font-size: 5px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-  }
-  .nav li {
-    list-style: none;
-    margin-top: 5px;
-    z-index: 1;
-  }
-  .nav a {
-    color: #fff;
-    list-style: none;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
   .container {
     padding: 10px 70px;
   }
