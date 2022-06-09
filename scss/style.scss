@@ -31,10 +31,12 @@ body {
 }
 
 /* getting all */
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.menu > li a {
+  color: #fff;
   font-size: 1.2rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 .menu-button-container {
